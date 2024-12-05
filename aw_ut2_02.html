@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Bloons Card Storm</title>
+</head>
+<body background="imagenes/Fondo.png">
+    <table align="center" bgcolor="black" border="1" cellpadding="10px">
+        <tr bgcolor="#f9e819" align="center">            
+            <td>
+                <h1> <img src="imagenes/icono.png" height="75px" align="middle" hspace="10px" > Bloons Card Storm <img src="imagenes/icono.png" height="75px" align="middle" hspace="10px" > </h1>
+            </td>
+        </tr>
+    </table>
+    <br><br><br>
+<!--Definiciones-->
+    <table align="center" bgcolor="black" border="1" cellpadding="10px">
+        <tr bgcolor="#f9e819" align="center">            
+            <td colspan="6">
+                <h3>Terminos Importantes</h3>
+            </td>
+        </tr>
+        <tr bgcolor="#f9e819" align="center">            
+            <td>
+                <a href="#Defensor">Defensor +X</a>
+            </td>
+            <td>
+                <a href="#Pick">Pick X</a>
+            </td>
+            <td>
+                <a href="#Delay">Tiempo de Espera</a>
+            </td>
+            <td>
+                <a href="#Ammo">Munición</a>
+            </td>
+            <td>
+                <a href="#Reload">Recarga</a>
+            </td>
+            <td>
+                <a href="#Blootonium">Blootonium</a>
+            </td>
+        </tr>
+    </table>
+    <br><br>
+<!--Indice Cartas-->
+    <table align="center" bgcolor="black" border="1" cellpadding="10px" id="Indice">
+        <tr bgcolor="#f9e819" align="center">            
+            <td>
+                <h2>Cartas Monos</h2>
+            </td>
+            <td>
+                <h2>Cartas Globos</h2>
+            </td>
+            <td>
+                <h2>Cartas Magicas</h2>
+            </td>
+        </tr>
+    </table>
+    <table align="center" bgcolor="black" border="1" cellpadding="10px">
+        <tr bgcolor="#f9e819">            
+            <td>
+                <img src="imagenes/bloons-card-storm-developer-diary-march-2024-v0-nhkaa6gmadoc1.png" height="300px" usemap="#cartas">
+            </td>
+        </tr>
+    </table>
+    <map name="cartas" id="cartas">
+        <area shape="rect" coords="20,20,200,280" href="#Monos">
+        <area shape="rect" coords="240,20,430,280" href="#Globos">
+        <area shape="rect" coords="470,20,650,280" href="#Magia">
+    </map>
+    <br><br>
+<!-- Tabla Cartas de Monos -->
+    <table align="center" bgcolor="black" border="1" cellpadding="10px" id="Monos">
+        <tr bgcolor="#f9e819">            
+            <td>
+                <h2>Tabla Cartas de Monos</h2>
+            </td>
+        </tr>
+    </table>
+    <table align="center" bgcolor="black" border="1" cellpadding="10px">
+        <tr bgcolor="#f9e819" align="center">            
+            <td>Imágen</td>
+            <td>Nombre</td>
+            <td>Coste</td>
+            <td>Daño</td>
+            <td>Rareza</td>
+        </tr>
+        <tr bgcolor="#f9e819" align="center">            
+            <td><img src="imagenes/monos/DartMonkeyIllustration.webp" height="100px"></td>
+            <td>Mono Dardero</td>
+            <td>0</td>
+            <td>20</td>
+            <td rowspan="7">Común</td>
+            
+        </tr>
+        <tr bgcolor="#f9e819" align="center">            
+            <td><img src="imagenes/monos/MortarMonkey_CardArt.webp" height="100px"></td>
+            <td>Mono Mortero</td>
+            <td>2</td>
+            <td>40</td>
+            
+        </tr>
+        <tr bgcolor="#f9e819" align="center">            
+            <td><img src="imagenes/monos/TackShooter_CardArt.webp" height="100px"></td>
+            <td>Tira Tachuelas</td>
+            <td>2</td>
+            <td>50</td>
+            
+        </tr>
+        <tr bgcolor="#f9e819" align="center">            
+            <td><img src="imagenes/monos/SniperMonkey_CardArt.webp" height="100px"></td>
+            <td>Mono Francotirador</td>
+            <td>3</td>
+            <td>70</td>
+            
+        </tr>
+        <tr bgcolor="#f9e819" align="center">            
+            <td><img src="imagenes/monos/BananaFarm_CardArt.webp" height="100px"></td>
+            <td>Bananal</td>
+            <td>4</td>
+            <td>N/A</td>
+            
+        </tr>
+        <tr bgcolor="#f9e819" align="center">            
+            <td><img src="imagenes/monos/MonkeyVillage_CardArt.webp" height="100px"></td>
+            <td>Mono Aldea</td>
+            <td>4</td>
+            <td>N/A</td>
+            
+        </tr>
+        <tr bgcolor="#f9e819" align="center">            
+            <td><img src="imagenes/monos/EliteDefender_CardArt.webp" height="100px"></td>
+            <td>Defensor de Elite</td>
+            <td>7</td>
+            <td>150</td>
+            
+        </tr>
+        <tr bgcolor="#f9e819" align="center">            
+            <td><img src="imagenes/monos/BoomerangMonkey.webp" height="100px"></td>
+            <td>Mono Boomerang</td>
+            <td>3</td>
+            <td>45</td>
+            <td rowspan="7"> Poco Común</td>
+        </tr>
+        <tr bgcolor="#f9e819" align="center">            
+            <td><img src="imagenes/monos/TripleShot_CardArt.webp" height="100px"></td>
+            <td>Mono Dardero Triple</td>
+            <td>3</td>
+            <td>60</td>
+            
+        </tr>
+        <tr bgcolor="#f9e819" align="center">            
+            <td><img src="imagenes/monos/BurnyStuff_CardArt.webp" height="100px"></td>
+            <td>Mortero de Fuego</td>
+            <td>4</td>
+            <td>40</td>
+            
+        </tr>
+        <tr bgcolor="#f9e819" align="center">            
+            <td><img src="imagenes/monos/CrossbowMonkey_CardArt.webp" height="100px"></td>
+            <td>Mono Ballestero</td>
+            <td>4</td>
+            <td>70</td>
+            
+        </tr>
+        <tr bgcolor="#f9e819"align="center">            
+            <td><img src="imagenes/monos/MonkeyApprentice_CardArt.webp" height="100px"></td>
+            <td>Mono Mago</td>
+            <td>4</td>
+            <td>25</td>
+            
+        </tr>
+        <tr bgcolor="#f9e819" align="center">            
+            <td><img src="imagenes/monos/SupplyDropSniper_CardArt.webp" height="100px"></td>
+            <td>Mono Francotirador de Suministros</td>
+            <td>5</td>
+            <td>65</td>
+            
+        </tr>
+        <tr bgcolor="#f9e819" align="center">            
+            <td><img src="imagenes/monos/SuperMonkeyFanClub_-11759.webp" height="100px"></td>
+            <td>Mono Fan del Supermono</td>
+            <td>6</td>
+            <td>30</td>
+            
+        </tr>
+        <tr bgcolor="#f9e819" align="center">            
+            <td><img src="imagenes/monos/SpikeOPult_CardArt.webp" height="100px"></td>
+            <td>Catapulta de Pinchos</td>
+            <td>4</td>
+            <td>50</td>
+            <td rowspan="4"> Raro</td>
+        </tr>
+        <tr bgcolor="#f9e819" align="center">            
+            <td><img src="imagenes/monos/BionicBoomerang_CardArt.webp" height="100px"></td>
+            <td>Mono Boomerang Bionico</td>
+            <td>6</td>
+            <td>160</td>
+            
+        </tr>
+        <tr bgcolor="#f9e819" align="center">            
+            <td><img src="imagenes/monos/Necromancer_CardArt.webp" height="100px"></td>
+            <td>Mono Nigromante</td>
+            <td>7</td>
+            <td>N/A</td>
+            
+        </tr>
+        <tr bgcolor="#f9e819" align="center">            
+            <td><img src="imagenes/monos/SuperMonkey.webp" height="100px"></td>
+            <td>Super Mono</td>
+            <td>8</td>
+            <td>270</td>
+            
+        </tr>
+        <tr bgcolor="#f9e819" align="center">            
+            <td><img src="imagenes/monos/BouncingBullet_CardArt.webp" height="100px"></td>
+            <td>Mono Francotirador con Balas Rebotantes</td>
+            <td>8</td>
+            <td>155</td>
+            <td rowspan="2">Super raro</td>
+        </tr>
+        <tr bgcolor="#f9e819" align="center">            
+            <td><img src="imagenes/monos/PrinceOfDarkness_CardArt.webp" height="100px"></td>
+            <td>Principe de las Tinieblas</td>
+            <td>10</td>
+            <td>N/A</td>
+            
+        </tr>
+        <tr bgcolor="#f9e819" align="center">            
+            <td><img src="imagenes/monos/Marketplace_CardArt.webp" height="100px"></td>
+            <td>Mercado</td>
+            <td>6</td>
+            <td>N/A</td>
+            <td rowspan="4">Ultra raro</td>
+        </tr>
+        <tr bgcolor="#f9e819" align="center">            
+            <td><img src="imagenes/monos/CripplingSniper_CardArt.webp" height="100px"></td>
+            <td>Mono Francotirador Camuflado</td>
+            <td>7</td>
+            <td>150</td>
+            
+        </tr>
+        <tr bgcolor="#f9e819" align="center">            
+            <td><img src="imagenes/monos/SharpShooter_CardArt.webp" height="100px"></td>
+            <td>Mono Ballestero Afilado</td>
+            <td>9</td>
+            <td>120</td>
+            
+        </tr>
+        <tr bgcolor="#f9e819" align="center">            
+            <td><img src="imagenes/monos/GlaiveRicochet_CardArt.webp" height="100px"></td>
+            <td>Mono Boomerang Rebote de Guja</td>
+            <td>12</td>
+            <td>390</td>
+            
+        </tr>
+    </table>
+    <table align="center" bgcolor="black" border="1" cellpadding="10px" id="Monos">
+        <tr bgcolor="#f9e819">            
+            <td>
+                <h2><a href="#Indice">Vuelta al índice</a></h2>
+            </td>
+        </tr>
+    </table>
+    <br><br>
+<!-- Tabla Cartas de Magia -->
+    <table align="center" bgcolor="black" border="1" cellpadding="10px" id="Magia">
+        <tr bgcolor="#f9e819">            
+            <td>
+                <h2>Tabla Cartas de Magia</h2>
+            </td>
+        </tr>
+    </table>
+    <table align="center" bgcolor="black" border="1" cellpadding="10px">
+        <tr bgcolor="#f9e819" align="center">
+            <td>Imágen</td>
+            <td>Nombre</td>
+            <td>Coste</td>
+            <td>Descripción</td>
+            <td>Rareza</td>
+        </tr>
+        <tr bgcolor="#f9e819" align="center">            
+            <td><img src="imagenes/magia/BloontoniumCache_CardArt.webp" height="100px"></td>
+            <td>Reservas de Blootonium</td>
+            <td>0</td>
+            <td>Gana 5 de Blootonium</td>
+            <td rowspan="9">Común</td>
+        </tr>
+        <tr bgcolor="#f9e819" align="center">            
+            <td><img src="imagenes/magia/CashDrop_CardArt.webp" height="100px"></td>
+            <td>Entrega de Dinero</td>
+            <td>0</td>
+            <td>Gana 1 de oro</td>
+            
+        </tr>
+        <tr bgcolor="#f9e819" align="center">            
+            <td><img src="imagenes/magia/Fortify_CardArt.webp" height="100px"></td>
+            <td>Fortificación</td>
+            <td>2</td>
+            <td>Dale a un globo aliado +50 de vida</td>
+            
+        </tr>
+        <tr bgcolor="#f9e819" align="center">            
+            <td><img src="imagenes/magia/Stunned_CardArt.webp" height="100px"></td>
+            <td>Aturdido</td>
+            <td>2</td>
+            <td>Aturde a un Mono</td>
+            
+        </tr>
+        <tr bgcolor="#f9e819" align="center">            
+            <td><img src="imagenes/magia/BloonStrike_CardArt.webp" height="100px"></td>
+            <td>Golpe de Globos</td>
+            <td>3</td>
+            <td>Haces 50 de daño al Héroe enemigo</td>
+            
+        </tr>
+        <tr bgcolor="#f9e819" align="center">            
+            <td><img src="imagenes/magia/QuickBreak_CardArt.webp" height="100px"></td>
+            <td>Descanso Rapido</td>
+            <td>3</td>
+            <td>Curas a tu Héroe 100 de vida</td>
+            
+        </tr>
+        <tr bgcolor="#f9e819" align="center">            
+            <td><img src="imagenes/magia/SupplyDrop_CardArt.webp" height="100px"></td>
+            <td>Entrega de Suministros</td>
+            <td>3</td>
+            <td>Roba 2 cartas</td>
+            
+        </tr>
+        <tr bgcolor="#f9e819" align="center">            
+            <td><img src="imagenes/magia/Restock_CardArt.webp" height="100px"></td>
+            <td>Reponer</td>
+            <td>5</td>
+            <td>Roba 3 cartas</td>
+        </tr>
+        <tr bgcolor="#f9e819" align="center">            
+            <td><img src="imagenes/magia/RedBloonStorm_CardArt.webp" height="100px"></td>
+            <td>Tormenta de Globos Rojos</td>
+            <td>6</td>
+            <td>Llena tu tablero de globos rojos</td>
+            
+        </tr>
+        <tr bgcolor="#f9e819" align="center">            
+            <td><img src="imagenes/magia/Whoops_CardArt.webp" height="100px"></td>
+            <td>Whoops</td>
+            <td>1</td>
+            <td>El mono objetivo pierde toda su munición</td>
+            <td rowspan="5">Poco Común</td>
+        </tr>
+        <tr bgcolor="#f9e819" align="center">            
+            <td><img src="imagenes/magia/BedTime_CardArt.webp" height="100px"></td>
+            <td>Hora de Dormir</td>
+            <td>3</td>
+            <td>Eliminas el mono enemigo objetivo con 30 o menos de daño</td>
+            
+        </tr>
+        <tr bgcolor="#f9e819" align="center">            
+            <td><img src="imagenes/magia/ImprovedFortification_CardArt.webp" height="100px"></td>
+            <td>Fortificación Mejorada</td>
+            <td>3</td>
+            <td>Da al globo aliado objetivo +150 de vida pero aumenta su tiempo de espera en 1</td>
+            
+        </tr>
+        <tr bgcolor="#f9e819" align="center">            
+            <td><img src="imagenes/magia/BloonEmbiggen_CardArt.webp" height="100px"></td>
+            <td>Expansión de Globos</td>
+            <td>4</td>
+            <td>Das a todos tus globos +25 de vida</td>
+            
+        </tr>
+        <tr bgcolor="#f9e819" align="center">            
+            <td><img src="imagenes/magia/PowerfulSlowingTotem_CardArt.webp" height="100px"></td>
+            <td>Poderoso Tótem de Ralentización</td>
+            <td>7</td>
+            <td>Aumenta el tiempo de espera de todos los globos enemigos en 1</td>
+            
+        </tr>
+        <tr bgcolor="#f9e819" align="center">            
+            <td><img src="imagenes/magia/StormOfArrows_CardArt.webp" height="100px"></td>
+            <td>Lluvia de Flechas</td>
+            <td>2</td>
+            <td>Haz 150 de daño a 2 globos enemigos al azar</td>
+            <td rowspan="9">Raro</td>
+        </tr>
+        <tr bgcolor="#f9e819" align="center">            
+            <td><img src="imagenes/magia/Firestorm_CardArt.webp" height="100px"></td>
+            <td>Tormenta de Fuego</td>
+            <td>3</td>
+            <td>Haz 70 de daño a todos los globos enemigos</td>
+            
+        </tr>
+        <tr bgcolor="#f9e819" align="center">            
+            <td><img src="imagenes/magia/StickyBomb_CardArt.webp" height="100px"></td>
+            <td>Bomba Pegajosa</td>
+            <td>3</td>
+            <td>Haces 300 de daño a un globo grande</td>
+            
+        </tr>
+        <tr bgcolor="#f9e819" align="center">            
+            <td><img src="imagenes/magia/WallOfTrees_CardArt.webp" height="100px"></td>
+            <td>Muro de Arboles</td>
+            <td>3</td>
+            <td>Gana un escudo de 120 de vida. Cuando se rompe, gana 2 de oro</td>
+            
+        </tr>
+        <tr bgcolor="#f9e819" align="center">            
+            <td><img src="imagenes/magia/Return2Sender.webp" height="100px"></td>
+            <td>Devolver al Remitente</td>
+            <td>4</td>
+            <td>Devuelve al globo o mono a la mano de se propietario</td>
+           
+        </tr>
+        <tr bgcolor="#f9e819" align="center">            
+            <td><img src="imagenes/magia/Shrink_CardArt.webp" height="100px"></td>
+            <td>Encoger</td>
+            <td>5</td>
+            <td>Transformas al mono objetivo en un mono bebé</td>
+            
+        </tr>
+        <tr bgcolor="#f9e819" align="center">            
+            <td><img src="imagenes/magia/QuickReady_CardArt.webp" height="100px"></td>
+            <td>Rápido y Listo</td>
+            <td>6</td>
+            <td>Reduces el tiempo de espera del globo objetivo en 1</td>
+            
+        </tr>
+        <tr bgcolor="#f9e819" align="center">            
+            <td><img src="imagenes/magia/ExpertNegotiator_CardArt.webp" height="100px"></td>
+            <td>Negociador Experto</td>
+            <td>8</td>
+            <td>El mono objetivo se une a tu equipo</td>
+            
+        </tr>
+        <tr bgcolor="#f9e819" align="center">            
+            <td><img src="imagenes/magia/SuperMonkeyStorm_CardArt.webp" height="100px"></td>
+            <td>Tormenta de Super Monos</td>
+            <td>8</td>
+            <td>Haz 150 de daño a los globos enemigos</td>
+            
+        </tr>
+        <tr bgcolor="#f9e819" align="center">            
+            <td><img src="imagenes/magia/Ceasefire_CardArt.webp" height="100px"></td>
+            <td>Alto el Fuego</td>
+            <td>7</td>
+            <td>Los monos enemigos pierden toda la munición</td>
+            <td rowspan="2">Super Raro</td>
+        </tr>
+        <tr bgcolor="#f9e819" align="center">            
+            <td><img src="imagenes/magia/MoabStrike_CardArt.webp" height="100px"></td>
+            <td>Choque de MOAB</td>
+            <td>7</td>
+            <td>Haz 100 de daño al héroe enemigo</td>
+            
+        </tr>
+    </table>
+    <table align="center" bgcolor="black" border="1" cellpadding="10px" id="Monos">
+        <tr bgcolor="#f9e819">            
+            <td>
+                <h2><a href="#Indice">Vuelta al índice</a></h2>
+            </td>
+        </tr>
+    </table>
+    <br><br>
+<!-- Tabla Cartas de Globos -->
+    <table align="center" bgcolor="black" border="1" cellpadding="10px" id="Globos">
+        <tr bgcolor="#f9e819">            
+            <td>
+                <h2>Tabla Cartas de Globos</h2>
+            </td>
+        </tr>
+    </table>
+    <table align="center" bgcolor="black" border="1" cellpadding="10px">
+        <tr bgcolor="#f9e819" align="center">            
+            <td>Imágen</td>
+            <td>Nombre</td>
+            <td>Coste</td>
+            <td>Daño</td>
+            <td>Rareza</td>
+        </tr>
+        <tr bgcolor="#f9e819" align="center">            
+            <td><img src="imagenes/globos/RedBloon_CardArt.webp" height="100px"></td>
+            <td>Globo Rojo</td>
+            <td>0</td>
+            <td>40</td>
+            <td rowspan="4">Común</td>
+        </tr>
+        <tr bgcolor="#f9e819" align="center">            
+            <td><img src="imagenes/globos/BlueBloon_CardArt.webp" height="100px"></td>
+            <td>Globo Azul</td>
+            <td>1</td>
+            <td>60</td>
+            
+        </tr>
+        <tr bgcolor="#f9e819" align="center">            
+            <td><img src="imagenes/globos/GreenBloon_CardArt.webp" height="100px"></td>
+            <td>Globo Verde</td>
+            <td>2</td>
+            <td>100</td>
+            
+        </tr>
+        <tr bgcolor="#f9e819" align="center">            
+            <td><img src="imagenes/globos/YellowBloon_CardArt.webp" height="100px"></td>
+            <td>Globo Amarillo</td>
+            <td>3</td>
+            <td>140</td>
+            
+        </tr>
+        <tr bgcolor="#f9e819" align="center">            
+            <td><img src="imagenes/globos/SwarmRedBloon_CardArt.webp" height="100px"></td>
+            <td>Enjambre de Globos Rojos</td>
+            <td>0</td>
+            <td>20</td>
+            <td rowspan="12">Poco Común</td>
+        </tr>
+        <tr bgcolor="#f9e819" align="center">            
+            <td><img src="imagenes/globos/SwarmBloonBlue_CardArt.webp" height="100px"></td>
+            <td>Enjambre de Globos Azules</td>
+            <td>1</td>
+            <td>50</td>
+            
+        </tr>
+        <tr bgcolor="#f9e819" align="center">            
+            <td><img src="imagenes/globos/DoubleRedBloon_CardArt.webp" height="100px"></td>
+            <td>Doble Globo Rojo</td>
+            <td>2</td>
+            <td>80</td>
+            
+        </tr>
+        <tr bgcolor="#f9e819" align="center">            
+            <td><img src="imagenes/globos/SwarmGreenBloon_CardArt.webp" height="100px"></td>
+            <td>Enjambre de Globos Verdes</td>
+            <td>2</td>
+            <td>80</td>
+            
+        </tr>
+        <tr bgcolor="#f9e819" align="center">            
+            <td><img src="imagenes/globos/DoubleBlueBloon_CardArt.webp" height="100px"></td>
+            <td>Doble Globo Azul</td>
+            <td>3</td>
+            <td>120</td>
+            
+        </tr>
+        <tr bgcolor="#f9e819" align="center">            
+            <td><img src="imagenes/globos/SwarmYellowBloon_CardArt.webp" height="100px"></td>
+            <td>Enjambre de Globos Amarillos</td>
+            <td>3</td>
+            <td>115</td>
+            
+        </tr>
+        <tr bgcolor="#f9e819" align="center">            
+            <td><img src="imagenes/globos/DoubleGreenBloon_CardArt.webp" height="100px"></td>
+            <td>Doble Globo Verde</td>
+            <td>4</td>
+            <td>160</td>
+            
+        </tr>
+        <tr bgcolor="#f9e819" align="center">            
+            <td><img src="imagenes/globos/CeramicBloon_CardArt.webp" height="100px"></td>
+            <td>Globo Cerámico</td>
+            <td>5</td>
+            <td>250</td>
+            
+        </tr>
+        <tr bgcolor="#f9e819" align="center">            
+            <td><img src="imagenes/globos/DoubleYellowBloon_CardArt.webp" height="100px"></td>
+            <td>Doble Globo Amarillo</td>
+            <td>5</td>
+            <td>220</td>
+            
+        </tr>
+        <tr bgcolor="#f9e819" align="center">            
+            <td><img src="imagenes/globos/DoubleCeramicBloon_CardArt.webp" height="100px"></td>
+            <td>Doble Globo Cerámico</td>
+            <td>7</td>
+            <td>440</td>
+            
+        </tr>
+        <tr bgcolor="#f9e819" align="center">            
+            <td><img src="imagenes/globos/RainbowBloon_CardArt.webp" height="100px"></td>
+            <td>Globo Arcoiris</td>
+            <td>8</td>
+            <td>400</td>
+            
+        </tr>
+        <tr bgcolor="#f9e819" align="center">            
+            <td><img src="imagenes/globos/ZebraBloon_CardArt.webp" height="100px"></td>
+            <td>Globo Zebra</td>
+            <td>8</td>
+            <td>150</td>
+            
+        </tr>
+        <tr bgcolor="#f9e819" align="center">            
+            <td><img src="imagenes/globos/NestedBlue_CardArt.webp" height="100px"></td>
+            <td>Globo Azul Anidado</td>
+            <td>1</td>
+            <td>60</td>
+            <td rowspan="13">Raro</td>
+        </tr>
+        <tr bgcolor="#f9e819" align="center">            
+            <td><img src="imagenes/globos/GoldenBloon_CardArt.webp" height="100px"></td>
+            <td>Globo Dorado</td>
+            <td>2</td>
+            <td>70</td>
+
+        </tr>
+        <tr bgcolor="#f9e819" align="center">            
+            <td><img src="imagenes/globos/NestedGreen_CardArt.webp" height="100px"></td>
+            <td>Globo Verde Anidado</td>
+            <td>2</td>
+            <td>100</td>
+            
+        </tr>
+        <tr bgcolor="#f9e819" align="center">            
+            <td><img src="imagenes/globos/AuraOfStrength_CardArt.webp" height="100px"></td>
+            <td>Globo con Aura de Fuerza</td>
+            <td>3</td>
+            <td>100</td>
+            
+        </tr>
+        <tr bgcolor="#f9e819" align="center">            
+            <td><img src="imagenes/globos/NestedYellow_CardArt.webp" height="100px"></td>
+            <td>Globo Amarillo Anidado</td>
+            <td>3</td>
+            <td>140</td>
+            
+        </tr>
+        <tr bgcolor="#f9e819" align="center">            
+            <td><img src="imagenes/globos/SteadyGrowthBloon_CardArt.webp" height="100px"></td>
+            <td>Globo en Crecimiento</td>
+            <td>3</td>
+            <td>100</td>
+            
+        </tr>
+        <tr bgcolor="#f9e819" align="center">            
+            <td><img src="imagenes/globos/PinkBloon_CardArt.webp" height="100px"></td>
+            <td>Globo Rosa</td>
+            <td>4</td>
+            <td>100</td>
+            
+        </tr>
+        <tr bgcolor="#f9e819" align="center">            
+            <td><img src="imagenes/globos/BlackBloon_CardArt.webp" height="100px"></td>
+            <td>Globo Negro</td>
+            <td>5</td>
+            <td>130</td>
+           
+        </tr>
+        <tr bgcolor="#f9e819" align="center">            
+            <td><img src="imagenes/globos/WhiteBloon_CardArt.webp" height="100px"></td>
+            <td>Globo Blanco</td>
+            <td>5</td>
+            <td>100</td>
+            
+        </tr>
+        <tr bgcolor="#f9e819" align="center">            
+            <td><img src="imagenes/globos/HasteningBloon_CardArt.webp" height="100px"></td>
+            <td>Globo Veloz</td>
+            <td>6</td>
+            <td>150</td>
+            
+        </tr>
+        <tr bgcolor="#f9e819" align="center">            
+            <td><img src="imagenes/globos/MOAB_CardArt.webp" height="100px"></td>
+            <td>MOAB</td>
+            <td>6</td>
+            <td>500</td>
+            
+        </tr>
+        <tr bgcolor="#f9e819" align="center">            
+            <td><img src="imagenes/globos/EmboldenedBloon_CardArt.webp" height="100px"></td>
+            <td>Globo Envalentonado</td>
+            <td>8</td>
+            <td>300</td>
+            
+        </tr>
+        <tr bgcolor="#f9e819" align="center">            
+            <td><img src="imagenes/globos/ZOMG_CardArt.webp" height="100px"></td>
+            <td>ZOMG</td>
+            <td>10</td>
+            <td>800</td>
+            
+        </tr>
+        <tr bgcolor="#f9e819" align="center">            
+            <td><img src="imagenes/globos/BFB_CardArt.webp" height="100px"></td>
+            <td>BFB</td>
+            <td>7</td>
+            <td>600</td>
+            <td>Super Rara</td>
+        </tr>
+        <tr bgcolor="#f9e819" align="center">            
+            <td><img src="imagenes/globos/DoubleRainbowBloon_CardArt.webp" height="100px"></td>
+            <td>Doble Globo Arcoiris</td>
+            <td>10</td>
+            <td>700</td>
+            <td>Ultra Rara</td>
+        </tr>
+    </table>
+    <table align="center" bgcolor="black" border="1" cellpadding="10px" id="Monos">
+        <tr bgcolor="#f9e819">            
+            <td>
+                <h2><a href="#Indice">Vuelta al índice</a></h2>
+            </td>
+        </tr>
+    </table>
+    <br><br>
+<!--Tabla Definiciones-->
+    <table align="center" bgcolor="black" border="1" cellpadding="10px">
+        <tr bgcolor="#f9e819">            
+            <td>
+                <h2 align="center">Definiciones de Terminos Importantes</h2>
+                <dl>
+                    <dt id="Defensor">Defensor +X</dt>
+                    <dd>Significa que durante el turno del oponente este mono tendrá +X de daño. Además atacará automaticamente a los globos cuando estos nos ataquen.</dd>
+                    <dt id="Pick">Pick X</dt>
+                    <dd>Significa que robas X cartas. Escoges una y la añades a tu mano. El resto se van al fondo de tu mazo.</dd>
+                    <dt id="Delay">Tiempo de Espera</dt>
+                    <dd>Son los turnos aliados que tienen que pasar para que un globo aliado en tu campo ataque al héroe enemigo.</dd>
+                    <dt id="Ammo">Munición</dt>
+                    <dd>Son los disparos que tiene un mono a la hora de atacar antes de ponerse a recargar.</dd>
+                    <dt id="Reload">Recarga</dt>
+                    <dd>Son los turnos aliados que tienen que pasar para que un mono que ya ha usado toda su munición pueda volver ha atacar.</dd>
+                    <dt id="Blootonium">Blootonium</dt>
+                    <dd>Es la energía que usa el héroe para usar sus ataques especiales. Se consigue al invocar un globo en tu campo, el Blootonium que ganas es igual al coste del globo.</dd>
+                </dl>
+            </td>
+        </tr>
+    </table>
+    <br><br>
+<!--Mapa Imagen Heroes-->
+    <table align="center" bgcolor="black" border="1" cellpadding="10px">
+        <tr bgcolor="#f9e819">            
+            <td>
+                <h2>Héroes</h2>
+            </td>
+        </tr>
+    </table>
+    <table align="center" bgcolor="black" border="1" cellpadding="10px">
+        <tr bgcolor="#f9e819">            
+            <td>
+                <img src="imagenes/Conjunto_de_heroes.png" usemap="#heroes">
+            </td>
+        </tr>
+    </table>
+    <map name="heroes" id="heroes">
+        <area shape="circle" coords="140,154,120" href="https://bloons.fandom.com/wiki/Quincy_(BCS)" target="_blank">
+        <area shape="circle" coords="420,154,120" href="https://bloons.fandom.com/wiki/Gwendolin_(BCS)" target="_blank">
+        <area shape="circle" coords="135,415,105" href="https://bloons.fandom.com/wiki/Obyn_Greenfoot_(BCS)" target="_blank">
+        <area shape="circle" coords="430,410,115" href="https://bloons.fandom.com/wiki/Amelia" target="_blank">
+    </map>
+    <br><br>
+    <table align="center" bgcolor="black" border="1" cellpadding="10px">
+        <tr bgcolor="#f9e819">            
+            <td>
+                <a href="aw_ut2_01.html"><-- Página principal.</a>
+            </td>
+            <td>
+                <a href="aw_ut2_03.html">Página del registro para la beta. --></a>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

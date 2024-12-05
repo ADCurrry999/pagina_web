@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head> <!-- Comentarios -->
+        <meta charset="UTF-8">
+        <title>Bloons Card Storm</title>
+    </head>
+
+    <body background="imagenes/Fondo.png">
+        <table align="center" bgcolor="black" border="1" cellpadding="10px">
+            <tr bgcolor="#f9e819" align="center">            
+                <td>
+                    <h1> <img src="imagenes/icono.png" height="75px" align="middle" hspace="10px" > Bloons Card Storm <img src="imagenes/icono.png" height="75px" align="middle" hspace="10px" > </h1>
+                </td>
+            </tr>
+        </table>
+        <br><br>
+        <table align="center" bgcolor="black" border="1" cellpadding="10px">
+            <tr bgcolor="#f9e819">            
+                <td>
+                    <form action="formulario_exitoso.html" method="post" enctype="multipart/form-data">
+                        <fieldset>
+                            <legend>Datos Personales</legend>
+                            <p>Nombre y Apellidos <input type="text" required="required" name="nombre_completo" tabindex="1"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            País <input type="text" readonly="readonly" value="España" name="país">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            Comunidad Autonoma
+                            <select name="comunidad_autonoma">
+                                <option value="anda">Andalucía</option>
+                                <option value="ara">Aragón</option>
+                                <option value="cana">Canarias</option>
+                                <option value="canta">Cantabria</option>
+                                <option value="casti_mancha">Castilla-La Mancha</option>
+                                <option value="casti_leon">Castilla y León</option>
+                                <option value="cata">Cataluña</option>
+                                <option value="madri">Comunidad de Madrid</option>
+                                <option value="nava">Comunidad Foral de Navarra</option>
+                                <option value="valen" selected="selected">Comunitat Valenciana</option>
+                                <option value="extre">Extremadura</option>
+                                <option value="gali">Galicia</option>
+                                <option value="bale">Illes Balears</option>
+                                <option value="rio">La Rioja</option>
+                                <option value="vasc">País Vasco o Euskadi</option>
+                                <option value="astu">Principado de Asturias</option>
+                                <option value="murc">Región de Murcia</option>
+                            </select></p>
+                            <p>Genero:
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            Correo electrónico <input type="email" name="correo" required="required">
+                            </p>
+                            <input type="radio" name="sexo" value="Hombre">Hombre <br>
+                            <input type="radio" name="sexo" value="Mujer">Mujer <br>
+                            <input type="radio" name="sexo" value="No_decirlo" checked="checked">Prefiero no decirlo <br><br>
+                            Porfavor Introduzca una foto de su DNI <input type="file" name="DNI" required="required">
+                        </fieldset>
+                        <br>
+                        <fieldset>
+                            <legend>Datos sobre la beta</legend>
+                            <label for="exp">Explicación breve de menos de 200 palabras:</label><br>
+                            <textarea id="exp" name="explicación" maxlength="200" placeholder="¿Porque quieres la beta?" required="required" rows="4" cols="50"></textarea>
+                            <p>Quieres que te llegue información sobre Bloons Card Storm al correo<input type="checkbox" checked="checked" name="info"></p>
+                            <p>Acepto los terminos y condiciones<input type="checkbox" name="info" required="required"></p>
+                            <button type="button" onClick="javascript:alert('Como si te los fueras a leer.')">
+                                Terminos y condiciones
+                            </button>
+                        </fieldset>
+                        <br>
+                        <fieldset>
+                            <legend>Datos Adicionales</legend>
+                            <p>¿Que juegos de la saga Bloons has jugado aparte de este? &nbsp;&nbsp;&nbsp;&nbsp;
+                                Indica tu mono favorito (Puedes acceder a la casilla con alt + m) 
+                                <input type="text" accesskey="m" required="required" name="mono_fav">
+                            </p>
+                            <select name="juegos" multiple="multiple" size="2">
+                                <option value="BTD6">Bloons Tower Defense 6</option>
+                                <option value="BTD5">Bloons Tower Defense 5</option>
+                                <option value="BTD4">Bloons Tower Defense 4</option>
+                                <option value="BTD3">Bloons Tower Defense 3</option>
+                                <option value="BTD2">Bloons Tower Defense 2</option>
+                                <option value="BTD1">Bloons Tower Defense 1</option>
+                                <option value="BTDB1">Bloons Tower Battles</option>
+                                <option value="BTDB2">Bloons Tower Battles 2</option>
+                                <option value="BTDMC">Bloons Tower Defense Monkey City</option>
+                            </select>
+                            <input type="hidden" name="fan" required="required" value="Es fanático de los monos">
+                        </fieldset>
+                        <br>
+                        <input type="submit" value="Enviar Información">
+                        <input type="reset" value="Reiniciar Formulario">
+                    </form>
+                </td>
+            </tr>
+        </table>
+        <br><br>
+        <table align="center" bgcolor="black" border="1" cellpadding="10px">
+            <tr bgcolor="#f9e819" align="center">            
+                <td>
+                    <p>Página Principal</p>
+                    <a href="aw_ut2_01.html"><img src="imagenes/icono.png" height="70px"></a>
+                </td>
+                <td>
+                    <p>Página informacion detallada</p>
+                    <a href="aw_ut2_02.html"><img src="imagenes/bloons-card-storm-review.jpg" height="70px"></a>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
